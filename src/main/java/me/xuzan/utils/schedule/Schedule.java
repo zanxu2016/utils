@@ -13,7 +13,7 @@ public class Schedule {
 //    @Scheduled(cron = "* * * * * *")//一秒执行一次
 //    @Scheduled(cron = "0,6 * * * * *")//每分钟的0秒和6秒各执行一次
 //    @Scheduled(cron = "0/6 * * * * *")//每6秒执行一次
-    @Scheduled(cron = "0 0 9,18 ? * MON-FRI")//执行一次
+    @Scheduled(cron = "0 30 9,18 ? * MON-FRI")//每周一至周五的9点半和18点半各执行一次
     public void reminder() {
         System.out.println("执行 cron 测试：" + CommTool.getDateStr(new Date()));
     }
