@@ -1,0 +1,13 @@
+# JavaMailSender 邮件发送的配置
+spring:
+  mail:
+    host: smtp.126.com
+    username: zanxu88@126.com
+    password: xz198979820511
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
